@@ -39,6 +39,11 @@ router.post("/catering",(req, res) => {
     res.sendFile(path.join(__dirname + '/catering.html'));
 });
 
+/* POST catering page. */
+router.post("/checkout",(req, res) => {
+  res.sendFile(path.join(__dirname + '/checkout.html'));
+});
+
 
 
 module.exports = router;
