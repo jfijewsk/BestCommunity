@@ -18,6 +18,8 @@
 	content: "";
 	display: table;
 	clear: both;
+	padding-top:20px;
+
   }
 
   .page {
