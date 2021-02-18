@@ -14,7 +14,6 @@
 <center>
     <form>
         <p><label>Pick a class to sign up for:<select id="class" name="class">
-                    <option value="rentVenue">Rent Venue</option>
                     <option value="spanish">Enroll in Spanish Class</option>
                     <option value="artsCrafts">Enroll in Arts & Crafts Class</option>
                     <option value="paint">Enroll in Painting Class</option>
@@ -30,11 +29,11 @@
 
   <h3 style="text-align: center;">Rent a venue</h3>
 
-      <form>
+      <form action="/catering" method="post">
         <p><label>Pick a location to sign up for:<select id="service" name="service">
-                    <option value="">Grand Hall</option>
-                    <option value="spanish">Business Center</option>
-                    <option value="artsCrafts">Picnic Field</option>
+                    <option id="grandHall" value="grandHall">Grand Hall</option>
+                    <option id="business" value="business">Business Center</option>
+                    <option id="picnic" value="picnic">Picnic Field</option>
 
                 </select></label></p>
         <p><label>Pick a date for the rental:</label> <input id="start" max="2030-12-31" min="2018-01-01"

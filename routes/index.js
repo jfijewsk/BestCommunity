@@ -34,6 +34,11 @@ router.get('/services', function(req, res, next) {
   res.sendFile(path.join(__dirname + '/services.html'));
 });
 
+/* POST catering page. */
+router.post("/catering",(req, res) => {
+    res.sendFile(path.join(__dirname + '/catering.html'));
+});
+
 
 
 module.exports = router;

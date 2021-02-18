@@ -1,0 +1,26 @@
+.column {
+	float: inline-start;
+	text-align: center;
+	column-gap: 100px;
+
+  }
+
+  .row {
+	text-align: center;
+
+	column-count: 3;
+	column-gap: 40px;
+	column-rule: 4px double #000000;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  .page {
+	width: 900px;
+	margin: 0 auto;
+  }
