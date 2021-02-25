@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 
 });
 
+
 /* GET donate page. */
 router.get('/donate', function(req, res, next) {
   res.sendFile(path.join(__dirname + '/donate.html'));
@@ -49,6 +50,12 @@ router.post("/checkout",(req, res) => {
   res.sendFile(path.join(__dirname + '/checkout.html'));
 });
 
+
+/* ALL 404 page. */
+router.all('/404', function(req, res, next) {
+  res.sendFile(path.join(__dirname + '/404.html'));
+
+});
 
 
 module.exports = router;
