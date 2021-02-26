@@ -30,6 +30,12 @@ router.get('/login', function(req, res, next) {
   res.sendFile(path.join(__dirname + '/login.html'));
 });
 
+/* GET event calendar page. */
+router.get('/eventCalendar', function(req, res, next) {
+  res.sendFile(path.join(__dirname + '/calendar.html'));
+});
+
+
 /* GET services page. */
 router.get('/services', function(req, res, next) {
   res.sendFile(path.join(__dirname + '/services.html'));
@@ -52,10 +58,12 @@ router.post("/checkout",(req, res) => {
 
 
 /* ALL 404 page. */
-router.all('/404', function(req, res, next) {
+router.all('*', function(req, res, next) {
   res.sendFile(path.join(__dirname + '/404.html'));
 
 });
+
+
 
 
 module.exports = router;
