@@ -7,18 +7,39 @@
   <a href="\services">Services</a>
   <a href="\donate">Donate</a>
   <a class="active" href="\volunteer">Volunteer</a>
+  <a href="\eventCalendar">Event Calendar</a>
   <a href="\login" style="float: right">Employee Login</a>
 
 </div>
 
 
-<p>&nbsp;</p>
-<h1 style="text-align: center;">Volunteer</h1>
 <center>
     
+<div class="first-column">
+    <h1 style="text-align: center;">Volunteer</h1>
+
+    <form>
+        <div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<br/>
+            <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+            </div><p>
+            <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<br/>
+            <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+            </div>
+        <p><label>Pick a service to volunteer for:<select id="service" name="service">
+                    <option value="chefClass">Easy Chef Class</option>
+                    <option value="shuttle">Shuttle Service</option>
+                </select></label></p>
+        <p><label>Pick a date for the service:</label> <input id="start" max="2030-12-31" min="2018-01-01"
+                name="trip-start" type="date" value="2021-01-01" /></p>
+
+        <input type="submit" , value="Register">
+    </form>
+    </div>
 
 
+<div class="second-column">
     <div class="calendar-container">
+        
         <div class="calendar-header">
             <h1> February<button>▾</button></h1>
             <p>2021</p>
@@ -81,17 +102,7 @@
             </section>
         </div>
     </div>
+</div>
 
 
-
-    <form>
-        <p><label>Pick a service to volunteer for:<select id="service" name="service">
-                    <option value="homeCare">Easy Chef Class</option>
-                    <option value="shuttle">Shuttle Service</option>
-                </select></label></p>
-        <p><label>Pick a date for the service:</label> <input id="start" max="2030-12-31" min="2018-01-01"
-                name="trip-start" type="date" value="2021-01-01" /></p>
-
-        <input type="submit" , value="Register">
-    </form>
 </center>

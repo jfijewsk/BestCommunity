@@ -6,21 +6,6 @@ body {
   color: #51565d;
 }
 
-.first-column {
-  width: 15%;
-  float: left;
-  margin: 0;
-  position: absolute;
-  top: 30%;
-
-}
-
-.second-column {
-  width: 85%;
-  float: right;
-
-}
-
 .calendar {
   display: grid;
   width: 100%;
@@ -28,9 +13,6 @@ body {
   grid-template-rows: 50px;
   grid-auto-rows: 120px;
   overflow: auto;
-  border: 1px solid black;
-
-
   
   &-container {
     width: 90%;
